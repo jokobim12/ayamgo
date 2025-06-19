@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.062);
+}
+
+*::-webkit-scrollbar {
+  display: none; /* Menyembunyikan scrollbar */
+}
+
+nav {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;        /* Tambahan opsional untuk jarak dari sisi kiri-kanan */
+    background-color: #6b0505d7; /* Contoh warna biru Bootstrap */
+    width: 100%;
+    backdrop-filter: blur(3px);
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a {
+    color: rgb(238, 255, 0);
+    text-decoration: none;
+}
+
+.img-overlay-container {
+    position: relative;
+    cursor: pointer;
+}
+
+.img-overlay-container img {
+    transition: filter 0.4s ease;
+    filter: brightness(40%); /* Awalnya gelap */
+}
+
+.img-overlay-container.clicked img {
+    filter: brightness(100%); /* Cerah saat diklik */
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 800;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    font-family: "Poppins", sans-serif;
+}
+
+.img-overlay-container.clicked .overlay-text {
+    opacity: 0; 
+}
+
+.video-embed{
+    height: 152px;
+}

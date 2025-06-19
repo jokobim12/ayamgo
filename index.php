@@ -16,15 +16,9 @@
 <body>
     <!-- navbar -->
     <?php
-    include 'navbar.html';
+    include 'layouts/navbar.html';
     ?>
 
-    <div class="main">
-        <div class="container">
-            <h1 class="text-center">Selamat datang di website Ayam GO</h1>
-            <p class="text-center">website ini menjual berbagai menu makanan ayam</p>
-        </div>
-    </div>
 
     <!-- footer -->
     <?php
