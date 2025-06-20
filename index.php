@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<<<<<<< HEAD
     <!-- google font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
@@ -40,16 +39,16 @@
                         <div class="carousel-item active">
                             <div class="row text-center">
                                 <div class="col-md-3">
-                                    <a href="menu.html"><img src="../ayamgo/assets/img/menu/menu.png" class="d-block w-100 rounded" alt="Menu 1"></a>
+                                    <a href="menu.php"><img src="../ayamgo/assets/img/menu/menu.png" class="d-block w-100 rounded" alt="Menu 1"></a>
                                 </div>
                                 <div class="col-md-3">
-                                    <a href="menu.html"><img src="../ayamgo/assets/img/menu/menu.png" class="d-block w-100 rounded" alt="Menu 2"></a>
+                                    <a href="menu.php"><img src="../ayamgo/assets/img/menu/menu.png" class="d-block w-100 rounded" alt="Menu 2"></a>
                                 </div>
                                 <div class="col-md-3">
-                                    <a href="menu.html"><img src="../ayamgo/assets/img/menu/menu.png" class="d-block w-100 rounded" alt="Menu 3"></a>
+                                    <a href="menu.php"><img src="../ayamgo/assets/img/menu/menu.png" class="d-block w-100 rounded" alt="Menu 3"></a>
                                 </div>
                                 <div class="col-md-3">
-                                    <a href="menu.html"><img src="../ayamgo/assets/img/menu/menu.png" class="d-block w-100 rounded" alt="Menu 4"></a>
+                                    <a href="menu.php"><img src="../ayamgo/assets/img/menu/menu.png" class="d-block w-100 rounded" alt="Menu 4"></a>
                                 </div>
                             </div>
                         </div>
@@ -58,16 +57,16 @@
                         <div class="carousel-item">
                             <div class="row text-center">
                                 <div class="col-md-3">
-                                    <a href="menu.html"><img src="../ayamgo/assets/img/menu/menu2.png" class="d-block w-100 rounded" alt="Menu 5"></a>
+                                    <a href="menu.php"><img src="../ayamgo/assets/img/menu/menu2.png" class="d-block w-100 rounded" alt="Menu 5"></a>
                                 </div>
                                 <div class="col-md-3">
-                                    <a href="menu.html"><img src="../ayamgo/assets/img/menu/menu2.png" class="d-block w-100 rounded" alt="Menu 6"></a>
+                                    <a href="menu.php"><img src="../ayamgo/assets/img/menu/menu2.png" class="d-block w-100 rounded" alt="Menu 6"></a>
                                 </div>
                                 <div class="col-md-3">
-                                    <a href="menu.html"><img src="../ayamgo/assets/img/menu/menu2.png" class="d-block w-100 rounded" alt="Menu 7"></a>
+                                    <a href="menu.php"><img src="../ayamgo/assets/img/menu/menu2.png" class="d-block w-100 rounded" alt="Menu 7"></a>
                                 </div>
                                 <div class="col-md-3">
-                                    <a href="menu.html"><img src="../ayamgo/assets/img/menu/menu2.png" class="d-block w-100 rounded" alt="Menu 8"></a>
+                                    <a href="menu.php"><img src="../ayamgo/assets/img/menu/menu2.png" class="d-block w-100 rounded" alt="Menu 8"></a>
                                 </div>
                             </div>
                         </div>
@@ -84,11 +83,7 @@
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
-
-
-
             </div>
-
         </div>
 
         <!-- Section Menu -->
@@ -102,6 +97,9 @@
 
     <!-- footer -->
     <?php include 'footer.html'; ?>
-</body>
-</html>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
