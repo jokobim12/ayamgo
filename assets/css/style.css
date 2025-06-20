@@ -1,75 +1,121 @@
-*{
-    padding: 0;
-    margin: 0;
+ * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-image: url(../img/backround.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      position: relative;
+      min-height: 100vh;
+    }
+
+    body::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: -1;
+    }
+
+    h1, h2, h3, p {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .text {
+      text-align: justify;
+    }
+
+    .main-wrapper {
+      position: relative;
+      z-index: 1;
+    }
+
+    *::-webkit-scrollbar {
+      display: none;
+    }
+
+    nav {
+      height: 60px;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      background-color: #6b0505d7;
+      width: 100%;
+      backdrop-filter: blur(3px);
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      list-style: none;
+      width: 100%;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .img-overlay-container {
+      position: relative;
+      cursor: pointer;
+    }
+
+    .img-overlay-container img {
+      transition: filter 0.4s ease;
+      filter: brightness(40%);
+    }
+
+    .img-overlay-container.clicked img {
+      filter: brightness(100%);
+    }
+
+    .overlay-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 2.5rem;
+      font-weight: 800;
+      transition: opacity 0.3s ease;
+      pointer-events: none;
+    }
+
+    .img-overlay-container.clicked .overlay-text {
+      opacity: 0;
+    }
+
+    .video-embed {
+      height: 152px;
+    }
+
+  .slideshow {
+  max-width: 100%;
+  overflow: hidden;
+  margin: auto;
 }
 
-body {
-    background-color: rgba(0, 0, 0, 0.062);
+.slideshow-track {
+  display: flex;
+  transition: transform 0.5s ease;
 }
 
-*::-webkit-scrollbar {
-  display: none; /* Menyembunyikan scrollbar */
+.slide-item {
+  flex: 0 0 25%; /* 100% dibagi 4 gambar */
 }
 
-nav {
-    height: 60px;
-    display: flex;
-    align-items: center;
-    padding: 0 20px;        /* Tambahan opsional untuk jarak dari sisi kiri-kanan */
-    background-color: #6b0505d7; /* Contoh warna biru Bootstrap */
-    width: 100%;
-    backdrop-filter: blur(3px);
-}
-
-nav ul {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    list-style: none;
-    width: 100%;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-nav ul li a {
-    color: rgb(238, 255, 0);
-    text-decoration: none;
-}
-
-.img-overlay-container {
-    position: relative;
-    cursor: pointer;
-}
-
-.img-overlay-container img {
-    transition: filter 0.4s ease;
-    filter: brightness(40%); /* Awalnya gelap */
-}
-
-.img-overlay-container.clicked img {
-    filter: brightness(100%); /* Cerah saat diklik */
-}
-
-.overlay-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 2.5rem;
-    font-weight: 800;
-    transition: opacity 0.3s ease;
-    pointer-events: none;
-    font-family: "Poppins", sans-serif;
-}
-
-.img-overlay-container.clicked .overlay-text {
-    opacity: 0; 
-}
-
-.video-embed{
-    height: 152px;
+.slide-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 15px;
+  cursor: pointer;
 }
