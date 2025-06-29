@@ -5,4 +5,4 @@
 4. Mariatul Kiftiah
 
 Link Websitenya:
-(https://jokobim12.github.io/ayamgo/)
+https://ayamgo.kesug.com/halaman/pelanggan/
